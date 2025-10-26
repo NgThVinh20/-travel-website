@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách tour</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- Top Header-->
+    <div class="top-header">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-item"><i class="fa-solid fa-phone"></i>0123.456.789</div>
+          <div class="inner-item"><i class="fa-solid fa-envelope"></i>contact@28travel.com</div>
+          <div class="inner-item"><i class="fa-solid fa-building"></i>Số 123, đường ABC, thành phố XYZ</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Header-->
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="inner-wrap">
+          <button class="inner-button-menu"><img alt="" src="assets/images/icon-menu.png"></button><a class="inner-logo" href="#"><img alt="28.TRAVEL" src="assets/images/logo.png"></a>
+          <nav class="inner-menu">
+            <ul>
+              <li><a class="active" href="#">Trang Chủ</a></li>
+              <li><a href="#">Tour Trong Nước</a><i class="fa-solid fa-caret-down"></i>
+                <ul class="inner-sub">
+                  <li><a class="active" href="#">Tour Miền Bắc</a></li>
+                  <li><a href="#">Tour Miền Trung</a></li>
+                  <li><a href="#">Tour Miền Nam</a></li>
+                  <li><a href="#">Tour Xuyên Việt</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tour Nước Ngoài</a><i class="fa-solid fa-caret-down"></i>
+                <ul class="inner-sub">
+                  <li><a href="#">Tour Châu Á</a></li>
+                  <li><a href="#">Tour Châu Âu</a></li>
+                  <li><a href="#">Tour Châu Mỹ</a></li>
+                  <li><a href="#">Tour Châu Úc</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tin Tức</a></li>
+              <li><a href="#">Liên Hệ</a></li>
+            </ul>
+            <div class="inner-overlay"></div>
+          </nav><a class="inner-cart" href="#"><img alt="" src="assets/images/icon-cart.png"><span><img alt="" src="assets/images/icon-arrow-left.png">1</span></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header-->
+    <!-- Breadcrumb-->
+    <div class="breadcrumb">
+      <div class="inner-image"><img alt="" src="assets/images/banner-6.jpg"></div>
+      <div class="inner-content">
+        <div class="container">
+          <div class="inner-wrap">
+            <h1 class="inner-title">Tour Nước Ngoài</h1>
+            <nav class="inner-links"><a href="#">Trang Chủ</a><i class="fa-solid fa-angles-right"></i><a href="#">Tour Nước Ngoài</a></nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumb-->
+    <!-- Section 9-->
+    <div class="section-9">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-left">
+            <!-- Box Filter-->
+            <div class="box-filter">
+              <div class="inner-head">
+                <div class="inner-title">Bộ Lọc</div><i class="fa-solid fa-filter"></i>
+              </div>
+              <div class="inner-group">
+                <div class="inner-label">Điểm đi</div>
+                <select>
+                  <option value="">-- Chọn điểm đi --</option>
+                  <option value="">Hà Nội</option>
+                  <option value="">Đà Nẵng</option>
+                  <option value="">Nha Trang</option>
+                </select>
+              </div>
+              <div class="inner-group">
+                <div class="inner-label">Điểm đến</div>
+                <select>
+                  <option value="">-- Chọn điểm đến --</option>
+                  <option value="">Hà Nội</option>
+                  <option value="">Đà Nẵng</option>
+                  <option value="">Nha Trang</option>
+                </select>
+              </div>
+              <div class="inner-group">
+                <div class="inner-label">Ngày khởi hành</div>
+                <input type="date">
+              </div>
+              <div class="inner-group">
+                <div class="inner-label">Số Lượng Hành Khách</div>
+                <div class="inner-input-list">
+                  <div class="inner-input-item">
+                    <div class="inner-label">Người lớn:</div>
+                    <input value="0" type="number">
+                  </div>
+                  <div class="inner-input-item">
+                    <div class="inner-label">Trẻ em:</div>
+                    <input value="0" type="number">
+                  </div>
+                  <div class="inner-input-item">
+                    <div class="inner-label">Em bé:</div>
+                    <input value="0" type="number">
+                  </div>
+                </div>
+              </div>
+              <div class="inner-group">
+                <div class="inner-label">Mức giá</div>
+                <select>
+                  <option value="">-- Chọn khoảng giá --</option>
+                  <option value="">Dưới 1tr</option>
+                  <option value="">Từ 1tr đến 3tr</option>
+                  <option value="">Từ 3tr đến 6tr</option>
+                  <option value="">Từ 6tr đến 10tr</option>
+                  <option value="">Trên 10tr</option>
+                </select>
+              </div>
+              <button class="inner-button">Áp Dụng</button>
+            </div>
+            <!-- End Box Filter-->
+          </div>
+          <div class="inner-right">
+            <div class="inner-info-1">
+              <h2 class="inner-title">Tour Nước Ngoài</h2>
+              <div class="inner-desc">Du lịch Châu Á: là châu lục lớn và đông dân nhất thế giới. Châu Á cũng có nhiều danh lam thắng cảnh đẹp tại một số quốc gia như Hàn Quốc, Nhật Bản, Trung Quốc, Việt Nam,... và VK Travel là nhà tổ chức du lịch chuyên nghiệp hàng đầu Châu Á, đã 5 lần liên tiếp nhận giải TTG Travel Awards. Hãy cùng 28.Travel du lịch Châu Á để tận hưởng những dịch vụ tốt nhất.</div>
+            </div>
+            <div class="inner-info-2">
+              <div class="inner-sort">
+                <div class="inner-label">Sắp xếp:</div>
+                <button>Giá tăng dần<i class="fa-solid fa-circle-arrow-up"></i></button>
+                <button>Giá giảm dần<i class="fa-solid fa-circle-arrow-down"></i></button>
+                <button class="active">Khuyến Mại Hot<i class="fa-solid fa-tag"></i></button>
+                <button>Xem Nhiều<i class="fa-solid fa-eye"></i></button>
+              </div>
+              <div class="inner-total-item">Tất cả:<b>101 Tour</b></div>
+              <button class="inner-button-filter">Bộ Lọc<i class="fa-solid fa-filter"></i></button>
+            </div>
+            <div class="inner-list-tour">
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="inner-image"><a href="#"><img alt="" src="assets/images/product-1.png"/></a></div>
+                <div class="inner-discount"><i class="fa-solid fa-bolt"></i>Giảm -30%</div>
+                <div class="inner-content">
+                  <h3 class="inner-title"><a href="#">Hà Nội – Lào Cai – SaPa 4N3Đ</a></h3>
+                  <div class="inner-prices">
+                    <div class="inner-price-old">13.650.000<span class="inner-unit">đ</span></div>
+                    <div class="inner-price-new">2.590.000<span class="inner-unit">đ</span></div>
+                  </div>
+                  <div class="inner-desc">
+                    <div>Mã Tour:<b>123456789</b></div>
+                    <div>Ngày Khởi Hành:<b>22/07/2024</b></div>
+                    <div>Thời Gian:<b>10 Ngày 9 Đêm</b></div>
+                  </div>
+                  <div class="inner-meta">
+                    <div class="inner-rating">
+                      <div class="inner-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                      <div class="inner-number">(5)</div>
+                    </div>
+                    <div class="inner-stock">
+                      <div class="inner-label">Số chỗ còn:</div>
+                      <div class="inner-number">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-pagination">
+              <div class="inner-list-button">
+                <button><i class="fa-solid fa-angles-left"></i></button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button><i class="fa-solid fa-angles-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section 9-->
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner-top">
+          <div class="inner-title">Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi</div>
+          <form class="inner-form" action="">
+            <input placeholder="Nhập email của bạn..." type="email">
+            <button>Đăng Ký Ngay</button>
+          </form>
+        </div>
+        <div class="inner-middle">
+          <nav class="inner-links">
+            <ul>
+              <li><a href="#">Trang Chủ</a></li>
+              <li><a href="#">Tour Trong Nước</a></li>
+              <li><a href="#">Tour Nước Ngoài</a></li>
+              <li><a href="#">Tin Tức</a></li>
+              <li><a href="#">Liên Hệ</a></li>
+            </ul>
+          </nav>
+          <nav class="inner-socials">
+            <ul>
+              <li><a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a target="_blank" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+              <li><a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="inner-bottom">
+          <div class="inner-copyright">© 2024 28Tech. All rights reserved.</div><a class="inner-logo" href="#"><img alt="" src="assets/images/logo.png"></a>
+          <nav class="inner-links">
+            <ul>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer-->
+    <!-- Box Contact-->
+    <nav class="box-contact">
+      <ul>
+        <li><a target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a target="_blank" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </nav>
+    <!-- End Box Contact-->
+    <script src="/assets/js/script.js"> </script>
+  </body>
+</html>
