@@ -59,6 +59,9 @@ if(boxAddressSection1){
 }
 // End Box Address section-1
 
+// input-calendar section-1
+
+
 // -----------------------------------------------------------------------------------------------------
 
 // box user section-1
@@ -247,3 +250,39 @@ if(swiperSection3){
 }
 // Swiper Section 3
 
+// box-images section-10
+const boxImages10 = document.querySelector(".box-images");
+if(boxImages10){
+ const swiperImagesThumb = new Swiper (".swiperImagesThumb", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 5,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+         breakpoints: {
+        576: {
+          spaceBetween: 10,
+        },
+      },
+    });
+    var swiperImagesMain = new Swiper(".swiperImagesMain", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 10,
+      thumbs: {
+        swiper: swiperImagesThumb,
+      },
+    });
+  }
+// box-images section-10
+// zoom section-10
+const section10 = document.querySelector(".section-10");
+new Viewer(section10);
+// zoom section-10
