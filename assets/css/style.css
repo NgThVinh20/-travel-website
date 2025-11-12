@@ -1239,8 +1239,15 @@ display:none;
   padding: 12px;
   display: flex;
   gap: 12px;
+  position: relative;
 }
-
+.footer .inner-top .inner-form .just-validate-error-label{
+  position: absolute;
+  top:105%;
+  left:12px;
+  color: rgb(190, 73, 73) !important;
+  font-size: 16px;
+} 
 .footer .inner-top .inner-form input {
   flex: 1;
   height: 48px;
@@ -2469,13 +2476,19 @@ display:none;
 .section-11 .inner-coupon {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 15px;
+  margin-bottom: px;
+  
 }
 
 .section-11 .inner-coupon form {
   display: flex;
+  position: relative;
 }
-
+.section-11 .inner-coupon .just-validate-error-label{
+  position: absolute;
+  top:105%;
+  left: 0;
+}
 .section-11 .inner-coupon input {
   width: 320px;
   height: 40px;
@@ -2694,6 +2707,10 @@ display:none;
   background-color: #F3F3F3;
   border-radius: 4px;
   padding: 15px;
+  display:none;
+}
+.section-12 .inner-info-bank.active{
+  display: block;
 }
 
 .section-12 .inner-info-bank .inner-title {

@@ -1,6 +1,5 @@
 // Khởi tạo AOS
 AOS.init({
-  once: true
 });
 // menumobile
 const buttonMenuMobile = document.querySelector(".header .inner-button-menu");
@@ -284,5 +283,100 @@ if(boxImages10){
 // box-images section-10
 // zoom section-10
 const section10 = document.querySelector(".section-10");
-new Viewer(section10);
+if(section10){
+  new Viewer(section10);
+}
 // zoom section-10
+
+// validate email form
+const emailForm = document.querySelector("#email-form");
+if(emailForm){
+  const validator = new JustValidate('#email-form');
+
+  validator 
+    .addField("#email-input", [
+      {
+        rule: "required", 
+        errorMessage: "Vui lòng nhập email của bạn!"
+      },
+      {
+        rule: 'email',
+        errorMessage: "Vui lòng nhập email đúng định dạng!"
+      },
+    ])
+    .onSuccess((event)=>{
+      const email = event.target.email.value;
+    })
+}
+// validate email form
+
+
+// validate coupon form
+const couponForm = document.querySelector("#coupon-form");
+if(couponForm){
+  const validator = new JustValidate('#coupon-form');
+
+  validator 
+    .addField("#coupon-input", [
+      {
+        rule: "required", 
+        errorMessage: "Vui lòng nhập mã giảm giá"
+      },
+    ])
+    .onSuccess((event)=>{
+      const emacouponil = event.target.coupon.value;
+    })
+}
+// validate coupon form
+
+
+// validate order form
+const orderForm = document.querySelector("#orderForm");
+if(orderForm){
+  const validator = new JustValidate('#orderForm');
+
+  validator 
+    .addField("#fullName", [
+      {
+        rule: "required", 
+        errorMessage: "Vui lòng nhập Họ tên"
+      },
+        {
+        rule: "minLength", 
+        value: 5,
+        errorMessage: "Vui lòng nhập ít nhất 3 ký tự!"
+      },
+    ])
+     .addField("#number-phone", [
+      {
+        rule: "required", 
+        errorMessage: "Vui lòng nhập số điện thoại"
+      },
+       {
+        rule: "customRegexp", 
+        value:/^(?:\+84|0)(3[2-9]|5[6|8|9]|7[0|6-9]|8[1-9]|9[0-9])[0-9]{7}$/,
+        errorMessage: "Vui lòng nhập số điện thoại đúng định dạng"
+      },
+    ])
+    .onSuccess((event)=>{
+      const fullName = event.target.fullName.value;
+      const numberPhone = event.target.numberPhone.value;
+      const note = event.target.note.value;
+      const medthod = event.target.method.value;
+    })
+
+    // list input method
+    const listInputMethod = orderForm.querySelectorAll(`input[name='method']`);
+    const elementInforBank = orderForm.querySelector(".inner-info-bank");
+    listInputMethod.forEach(input => {
+      input.addEventListener("change", () =>{
+        if(input.value==="bank"){
+          elementInforBank.classList.add("active");
+        }
+        else{
+          elementInforBank.classList.remove("active");
+        }
+      })
+    })
+}
+// validate order form

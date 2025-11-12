@@ -73,10 +73,12 @@ block main
                     span x
                     span.inner-highlight 5.990.000
         .inner-coupon
-          form(action="")
+          form(action="" id ="coupon-form")
             input(
               placeholder="Nhập mã giảm giá" 
               type="text"
+              name = "coupon"
+              id="coupon-input"
               )
             button Dùng Mã
         .inner-list-price
@@ -95,21 +97,25 @@ block main
   .section-12
     .container
       .inner-wrap
-        form(action="")
+        form(action="" id="orderForm")
           .inner-title-main Thông Tin Khách Hàng
           .inner-list-group
             .inner-group
               input(
                 placeholder="Họ và tên" 
                 type="text"
+                id="fullName"
+                name="fullName"
                 )
             .inner-group
               input(
                 placeholder="Số điện thoại" 
                 type="text"
+                id="number-phone"
+                name="numberPhone"
                 )
             .inner-group.inner-two-col
-              textarea(placeholder="Ghi chú")
+              textarea(placeholder="Ghi chú" name="note")
           .inner-title-main Chọn phương thức thanh toán
           .inner-list-method
             .inner-item
@@ -117,6 +123,7 @@ block main
                 value="money" 
                 name="method" 
                 type="radio"
+                checked
                 )
               label(for="methodMoney") Thanh toán tiền mặt khi đi tour
             .inner-item
