@@ -2136,7 +2136,10 @@ display:none;
   font-size: 16px;
   color: white;
 }
-
+.box-tour-detail .inner-button-add-cart:hover{
+  cursor:pointer;
+  background-color:#5a14e4;
+}
 @media (max-width: 575.98px) {
   .box-tour-detail {
     padding: 15px;
@@ -2363,7 +2366,10 @@ display:none;
   font-size: 13px;
   color: #828282;
 }
-
+.section-11 .inner-tour-item .inner-actions .inner-delete i:hover{
+  cursor:pointer;
+  color:#f9313d;
+}
 .section-11 .inner-tour-item .inner-actions .inner-check {
   margin: 0;
   width: 21px;
@@ -2510,7 +2516,10 @@ display:none;
   color: white;
   border: 0;
 }
-
+.section-11 .inner-coupon button:hover{
+  cursor:pointer;
+  background-color:#5018bf;
+}
 .section-11 .inner-list-price {
   display: flex;
   flex-direction: column;
@@ -2745,7 +2754,10 @@ display:none;
   color: white;
   text-transform: uppercase;
 }
-
+.section-12 .inner-button button:hover{
+  cursor:pointer;
+  background-color:#5018bf;
+}
 @media (max-width: 991.98px) {
   .section-12 .inner-wrap {
     width: 100%;
