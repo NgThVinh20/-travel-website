@@ -35,20 +35,20 @@ if(buttonMenuMobile){
 }
 // end menu Mobile
 // -----------------------------------------------------------------------------------------------------
-// Box Address section-1
-const boxAddressSection1=document.querySelector(".section-1 .inner-form .inner-address");
-if(boxAddressSection1){
+// Box type section-1
+const boxTypeSection1=document.querySelector(".section-1 .inner-form .inner-box");
+if(boxTypeSection1){
   // show/hide box suggest
-  const input=boxAddressSection1.querySelector(".inner-input-group input");
+  const input=boxTypeSection1.querySelector(".inner-input-group input");
   input.addEventListener("click", ()=>{
-    boxAddressSection1.classList.toggle("active")
+    boxTypeSection1.classList.toggle("active")
   })
    input.addEventListener("blur", () => {
-    boxAddressSection1.classList.remove("active");
+    boxTypeSection1.classList.remove("active");
   })
  
   // clicking event for each item
-  const listItem = boxAddressSection1.querySelectorAll(".inner-suggest .inner-item");
+  const listItem = boxTypeSection1.querySelectorAll(".inner-suggest .inner-item");
   listItem.forEach(item=>{
     item.addEventListener("mousedown", ()=>{
       const title = item.querySelector(".inner-item-title").innerHTML.trim();
@@ -343,7 +343,7 @@ if(orderForm){
       },
         {
         rule: "minLength", 
-        value: 5,
+        value: 3,
         errorMessage: "Vui lòng nhập ít nhất 3 ký tự!"
       },
     ])
